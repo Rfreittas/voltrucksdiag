@@ -1,0 +1,14 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,126 @@
+/* footer */
+.interface {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #f5f5f5;
+  color: #0c0c0c;
+  padding: 40px 0;
+}
+
+footer .line-footer2 {
+  padding: 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+}
+
+footer .line-footer2 .box-line-footer {
+  max-width: calc(100% / 5);
+}
+
+footer .box-line-footer img {
+  max-width: 90px;
+  margin-bottom: 10px;
+}
+
+.line-footer2 .box-line-footer h3 {
+  color: #f20744;
+  margin-bottom: 10px;
+}
+
+.line-footer2 .box-line-footer a {
+  color: #000000;
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.box-line-footer .btn-redes a {
+  display: inline;
+}
+
+.box-line-footer .btn-redes button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 2px solid #696767;
+  color: #030303;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: .2s;
+}
+
+.box-line-footer .btn-redes button:hover {
+  background-color: #f20744;
+  border-color: #f20744;
+}
+
+footer .line-footer3 {
+  padding-top: 40px;
+  text-align: center;
+}
+
+/* WhatsApp Footer */
+.whatsapp-footer {
+  background: #2b2b2b;
+  padding: 15px 0;
+}
+
+.whatsapp-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.whatsapp-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.whatsapp-text strong {
+  font-size: 18px;
+}
+
+.whatsapp-text small {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* BOTÃO */
+.btn-whatsapp {
+  background: #e30613;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.btn-whatsapp:hover {
+  background: #b9040f;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .whatsapp-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

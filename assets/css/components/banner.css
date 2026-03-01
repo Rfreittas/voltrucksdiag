@@ -1,0 +1,11 @@
+.banner-wrapper {
+  width: 100%;
+  background: var(--bg-dark);
+}
+
+.banner-container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}

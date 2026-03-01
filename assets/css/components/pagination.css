@@ -1,0 +1,9 @@
+.pagination .page-link {
+  color: var(--color-black);
+}
+
+.pagination .active .page-link {
+  background: var(--color-black);
+  border-color: var(--color-black);
+  color: #fff;
+}

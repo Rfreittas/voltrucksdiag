@@ -1,0 +1,77 @@
+/* ===============================
+   CARRINHO
+   =============================== */
+
+.carrinho-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+.carrinho-page h1 {
+  margin-bottom: 20px;
+}
+
+.lista-carrinho {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-carrinho {
+  display: flex;
+  gap: 15px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.item-carrinho img {
+  width: 90px;
+  object-fit: contain;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.quantidade {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.quantidade button {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.resumo {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.acoes {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-voltar,
+.btn-finalizar {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-voltar {
+  background: #ccc;
+  color: #000;
+}
+
+.btn-finalizar {
+  background: #198754;
+  color: #fff;
+}

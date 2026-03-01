@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalógo de Peças e Serviços | Voltrucks</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ICONES -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- FONTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header-container"></div>
+
+  <!-- ================= CONTEÚDO PRODUTOS ================= -->
+  <article class="produtos-page">
+    <div class="produtos-container">
+
+      <!-- BREADCRUMB -->
+      <nav aria-label="breadcrumb" class="mb-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/index.html">Produtos</a>
+          </li>
+          <li class="breadcrumb-item active">
+            Serviços
+          </li>
+        </ol>
+      </nav>
+
+      <!-- GRID PRINCIPAL -->
+      <div class="row">
+
+        <!-- SIDEBAR -->
+        <aside class="col-lg-3 col-md-12">
+
+          <div class="filter-box">
+            <h5>PRODUTOS</h5>
+            <ul class="filter-list">
+              <li><a href="/pages/interface-notebook.html">Scanner + Notebook</a></li>
+              <li><a href="/pages/scanners.html">Scanners</a></li>
+              <li><a href="/pages/servicos.html">Serviços</a></li>
+              <li><a href="/pages/Programas.html">Programas</a></li>
+              <li><a href="/pages/acessorios.html">Acessórios</a></li>
+            </ul>
+          </div>
+
+          <div class="filter-box">
+            <h5>FILTROS</h5>
+            <ul class="filter-list">
+              <li><a href="?marca=volvo">Volvo</a></li>
+              <li><a href="?marca=scania">Scania</a></li>
+              <li><a href="?marca=mercedes">Mercedes-Benz</a></li>
+              <li><a href="?marca=cummins">Cummins</a></li>
+              <li><a href="?marca=caterpillar">Caterpillar</a></li>
+            </ul>
+          </div>
+
+        </aside>
+
+        <!-- GRID PRODUTOS -->
+        <section class="col-lg-9 col-md-12">
+
+          <!-- TOPO -->
+          <div class="cardboard-top">
+            <div>
+              <select class="form-select form-select-sm w-auto d-inline">
+                <option>Mais vendidos</option>
+                <option>Mais recentes</option>
+              </select>
+              <small class="ms-2" id="contadorResultados"></small>
+            </div>
+          </div>
+
+          <!-- GRID -->
+          <div class="row g-4 mt-2 grid-produtos">
+
+            <div class="col-md-4">
+              <a href="/pages/product/atualizacao.html" style="text-decoration: none; color: inherit;">
+                <div class="cardboard-card">
+                  <img src="/assets/img/products/atualizacao/atualizaçoes.png" alt="Atualização">
+                  <h6>Atualizações</h6>
+                  <small>Preço mediante orçamento</small>
+                  <button class="btn-add-carrinho" data-nome="Atualizações" data-codigo="ATUALIZACOES"
+                    data-preco="Preço mediante orçamento">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="/pages/product/impact.html" style="text-decoration: none; color: inherit;">
+                <div class="cardboard-card">
+                  <img src="/assets/img/products/vimpact/impact.jpeg"
+                    alt="Catálogo Eletrônico Peças Reparo Volvo Impact 2024 - Euro 6">
+                  <h6>Catálogo Eletrônico Peças Reparo Volvo Impact 2024 - Euro 6</h6>
+                  <small>Preço mediante orçamento</small>
+                  <button class="btn-add-carrinho"
+                    data-nome="Catálogo Eletrônico Peças Reparo Volvo Impact 2024 - Euro 6" data-codigo="IMPACT2024"
+                    data-preco="Preço mediante orçamento">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="/pages/product/multi.html" style="text-decoration: none; color: inherit;">
+                <div class="cardboard-card">
+                  <img src="/assets/img/products/smulti/multi.png"
+                    alt="Scania MULTI 2025 Catálogo de Peças e Serviços">
+                  <h6>Scania MULTI 2025 Catálogo de Peças e Serviços</h6>
+                  <small>Preço mediante orçamento</small>
+                  <button class="btn-add-carrinho" data-nome="Scania MULTI 2025 Catálogo de Peças e Serviços"
+                    data-codigo="SCANIAMULTI2025" data-preco="Preço mediante orçamento">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="/pages/product/doutorie.html" style="text-decoration: none; color: inherit;">
+                <div class="cardboard-card">
+                  <img src="/assets/img/products/doutorie/doutorie.png" alt="Diagramas Elétricos Doutor iE 2020">
+                  <h6>Diagramas Elétricos Doutor iE 2020</h6>
+                  <small>Preço mediante orçamento</small>
+                  <button class="btn-add-carrinho" data-nome="Diagramas Elétricos Doutor iE 2020"
+                    data-codigo="DOUTORIE2020" data-preco="Preço mediante orçamento">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="/pages/product/simplo.html" style="text-decoration: none; color: inherit;">
+                <div class="cardboard-card">
+                  <img src="/assets/img/products/simplo/simplo.jpg" alt="Diagramas Elétricos Simplo 2025">
+                  <h6>Diagramas Elétricos Simplo 2025</h6>
+                  <small>Preço mediante orçamento</small>
+                  <button class="btn-add-carrinho" data-nome="Diagramas Elétricos Simplo 2025" data-codigo="SIMPL02025"
+                    data-preco="Preço mediante orçamento">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+              </a>
+            </div>
+
+
+            <ul class="pagination justify-content-center"></ul>
+            </nav>
+
+        </section>
+
+      </div>
+    </div>
+  </article>
+
+  <div id="footer-container"></div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/carousel.js"></script>
+  <script src="/assets/js/components.js"></script>
+  <script src="/assets/js/add-carrinho-cards.js"></script>
+  <script src="/assets/js/contador-carrinho.js"></script>
+</body>
+
+</html>
