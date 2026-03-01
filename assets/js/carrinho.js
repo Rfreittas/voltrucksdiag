@@ -20,14 +20,8 @@ function renderCarrinho() {
     const subtotal = preco * quantidade;
     total += subtotal;
 
-    const imgSrc = item.imagem && item.imagem !== ""
-      ? item.imagem
-      : "/assets/img/no-image.png";
-
     lista.innerHTML += `
       <div class="item-carrinho">
-        <img src="${imgSrc}" alt="${item.nome}">
-        
         <div class="item-info">
           <h4>${item.nome}</h4>
 

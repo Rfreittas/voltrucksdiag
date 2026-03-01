@@ -12,48 +12,111 @@
   margin-bottom: 20px;
 }
 
+/* ===============================
+   LISTA
+   =============================== */
+
 .lista-carrinho {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
+/* ===============================
+   ITEM
+   =============================== */
+
 .item-carrinho {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  gap: 10px;
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 6px;
-}
-
-.item-carrinho img {
-  width: 90px;
-  object-fit: contain;
+  background: #fff;
 }
 
 .item-info {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
+.item-info h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* ===============================
+   QUANTIDADE (+ / -)
+   =============================== */
+
 .quantidade {
-  display: flex;
-  gap: 8px;
+  display: inline-flex;
   align-items: center;
+  gap: 10px;
 }
 
 .quantidade button {
-  padding: 4px 10px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 6px;
+  background: #212529;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
+
+.quantidade button:hover {
+  background: #000;
+}
+
+.quantidade span {
+  min-width: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ===============================
+   BOTÃO REMOVER
+   =============================== */
+
+.btn-remover {
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  color: #dc3545;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-remover:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   RESUMO
+   =============================== */
 
 .resumo {
   margin-top: 20px;
   font-size: 18px;
+  font-weight: 500;
 }
+
+/* ===============================
+   AÇÕES
+   =============================== */
 
 .acoes {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -64,6 +127,7 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .btn-voltar {
@@ -71,7 +135,15 @@
   color: #000;
 }
 
+.btn-voltar:hover {
+  background: #b3b3b3;
+}
+
 .btn-finalizar {
   background: #198754;
   color: #fff;
+}
+
+.btn-finalizar:hover {
+  background: #157347;
 }
