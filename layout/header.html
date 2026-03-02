@@ -1,0 +1,60 @@
+<header class="bg-dark py-3">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- LOGO -->
+    <a href="/index.html">
+      <img src="/assets/img/banners/logo-marca.png" alt="Logo Voltrucks" style="width:220px">
+    </a>
+
+    <!-- BOTÃO HAMBÚRGUER (mobile) -->
+    <div class="menu-toggle d-lg-none" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- MENU -->
+    <nav class="menu" id="menu">
+      <ul class="d-flex gap-4 list-unstyled mb-0 align-items-center flex-lg-row flex-column">
+
+        <!-- PRODUTOS COM SUBMENU -->
+        <li class="has-submenu">
+          <a href="/pages/produtos.html" class="text-white text-decoration-none">
+            PRODUTOS
+          </a>
+
+          <ul class="submenu list-unstyled">
+            <li><a href="/pages/produtos.html">Produtos</a></li>
+            <li><a href="/pages/scanners.html">Scanners</a></li>
+            <li><a href="/pages/interface-notebook.html">Interface Notebook</a></li>
+          </ul>
+        </li>
+
+        <li class="d-none d-lg-block">
+          <a href="/pages/servicos.html" class="text-white text-decoration-none">SERVIÇOS</a>
+        </li>
+
+        <li class="d-none d-lg-block">
+          <a href="/pages/sobre.html" class="text-white text-decoration-none">SOBRE NÓS</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- AÇÕES -->
+    <div class="d-none d-lg-flex gap-2">
+      <button class="btn btn-outline-light">
+        <i class="bi bi-person-fill"></i>
+      </button>
+
+      <a href="/carrinho.html">
+        <button class="btn btn-outline-light position-relative">
+          <i class="bi bi-cart-check"></i>
+          <span id="badgeCarrinho" class="badge position-absolute top-0 start-100 translate-middle"></span>
+        </button>
+      </a>
+    </div>
+
+  </div>
+</header>
+

@@ -87,50 +87,94 @@ header ul li a {
   display: flex;
 }
 
-/* responsividade   */
-
-/* ===============================
-   HEADER RESPONSIVO
-   =============================== */
-
-@media (max-width: 1024px) {
-  header {
-    padding: 20px 4%;
-  }
-
-  header img {
-    width: 220px;
-  }
-
-  header ul li {
-    margin: 0 12px;
-  }
-
-  header ul li a {
-    font-size: 17px;
-  }
+/* responsividade Menu hanburguer  */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .container {
+.menu-toggle span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* SUBMENU */
+.submenu {
+  display: none;
+  margin-top: 10px;
+}
+
+.has-submenu.open .submenu {
+  display: block;
+}
+
+.submenu li a {
+  font-size: 15px;
+  color: #ccc;
+}
+
+@media (max-width: 1024px) {
+
+  /* Menu principal escondido por padrão */
+  .menu {
+    display: none;
+    /* escondido inicialmente */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #111;
+    padding: 20px 0;
+    z-index: 999;
     flex-direction: column;
-    gap: 20px;
   }
 
-  header img {
-    width: 200px;
+  /* Menu ativo */
+  .menu.active {
+    display: flex;
+    /* mostra o menu */
+    flex-direction: column;
   }
 
-  header ul {
-    text-align: center;
+  /* Ocultar itens desktop dentro do ul principal */
+  header ul li.d-none.d-lg-block {
+    display: none !important;
+    /* escondido no mobile */
   }
 
-  header ul li {
+  /* Itens do menu */
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .menu ul li {
     display: block;
-    margin: 10px 0;
+    margin: 12px 0;
   }
 
-  .btn-contato {
-    margin-top: 10px;
+  .menu ul li a {
+    color: #fff;
+    font-size: 18px;
+    display: block;
+  }
+
+  /* Submenu */
+  .submenu {
+    display: none;
+    /* escondido por padrão */
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .has-submenu.open .submenu {
+    display: flex;
+    /* aparece quando clicar */
   }
 }
