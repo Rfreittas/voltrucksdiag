@@ -199,29 +199,104 @@
   border-color: #198754;
 }
 
-
-
-/* ===== MOBILE ===== */
-@media (max-width: 991px) {
-
-  .produtos-page {
-    padding: 20px 0;
-  }
-
-  .produtos-page aside {
-    order: 2;
-  }
-
-  .produtos-page section {
-    order: 1;
-  }
-}
-
+/* RESPONSIVO */
 @media (max-width: 576px) {
 
+  /* Área principal */
+  .produtos-page {
+    padding: 15px 0;
+  }
+
+  /* Container */
+  .produtos-container {
+    padding: 0 10px;
+  }
+
+  /* Breadcrumb */
+  .produtos-page .breadcrumb a,
+  .produtos-page .breadcrumb-item.active {
+    font-size: 12px;
+  }
+
+  /* Sidebar vira bloco único */
+  .produtos-page aside {
+    margin-bottom: 15px;
+  }
+
+  .produtos-page .filter-box {
+    padding: 12px;
+  }
+
+  .produtos-page .filter-box h5 {
+    font-size: 13px;
+  }
+
+  /* Topo grid */
   .produtos-page .cardboard-top {
     flex-direction: column;
-    align-items: flex-start;
     gap: 10px;
+    align-items: flex-start;
   }
+
+  /* Cards */
+  .produtos-page .cardboard-card {
+    padding: 12px;
+  }
+
+  .produtos-page .cardboard-card img {
+    height: 140px;
+  }
+
+  .produtos-page .cardboard-card h6 {
+    font-size: 13px;
+    min-height: auto;
+  }
+
+  .produtos-page .cardboard-card small {
+    font-size: 11px;
+  }
+
+  /* Miniaturas */
+  .lista-imagens {
+    justify-content: center;
+  }
+
+  .lista-imagens img {
+    width: 55px;
+    height: 55px;
+  }
+
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+  /* Container */
+  .produtos-container {
+    padding: 0 15px;
+  }
+
+  /* Sidebar */
+  .produtos-page aside {
+    margin-bottom: 20px;
+  }
+
+  .produtos-page .filter-box h5 {
+    font-size: 14px;
+  }
+
+  /* Cards */
+  .produtos-page .cardboard-card img {
+    height: 160px;
+  }
+
+  .produtos-page .cardboard-card h6 {
+    font-size: 14px;
+  }
+
+  /* Miniaturas */
+  .lista-imagens img {
+    width: 60px;
+    height: 60px;
+  }
+
 }

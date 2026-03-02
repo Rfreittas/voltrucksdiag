@@ -95,24 +95,6 @@
   transform: scale(1.1);
 }
 
-/* Responsivo layout */
-@media (max-width: 900px) {
-  .container-produto {
-    flex-direction: column;
-  }
-}
-
-/* Responsivo imagem */
-@media (max-width: 768px) {
-  .imagem-principal {
-    width: 100%;
-    height: auto;
-  }
-
-  .imagem-principal img {
-    transform: none !important;
-  }
-}
 
 /* ================= PRODUTO ================= */
 
@@ -264,15 +246,6 @@
   transform: scale(1.6);
 }
 
-/* RESPONSIVO */
-@media (max-width: 900px) {
-  .container-produto {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
 /* BOTÃO ADICIONAR AO CARRINHO */
 .btn-add-carrinho {
   background-color: #212529;
@@ -298,4 +271,104 @@
   background-color: #212529;
   opacity: 0.8;
   cursor: not-allowed;
+}
+
+/* responsividade smartphones */
+@media (max-width: 576px) {
+
+  .produtos-page {
+    padding: 15px 0;
+  }
+
+  /* Container principal vira coluna */
+  .container-produto {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  /* Imagem principal */
+  .imagem-principal img {
+    height: 260px;
+  }
+
+  /* Miniaturas centralizadas */
+  .lista-imagens {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .lista-imagens img {
+    width: 55px;
+    height: 55px;
+  }
+
+  /* Nome do produto */
+  .produto-nome {
+    font-size: 20px;
+  }
+
+  .produto-codigo,
+  .produto-parcelamento {
+    font-size: 13px;
+  }
+
+  /* Botão carrinho */
+  .container-produto #btnCarrinho,
+  .btn-add-carrinho {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  /* Cartões */
+  .cartoes {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .cartoes img {
+    height: 24px;
+  }
+
+  /* Descrição */
+  .produto-descricao {
+    padding: 15px;
+    margin: 20px auto;
+  }
+}
+/*Responsivo para TABLETS */
+@media (min-width: 577px) and (max-width: 991px) {
+
+  .container-produto {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 30px auto;
+  }
+
+  /* Imagem */
+  .imagem-principal img {
+    height: 320px;
+  }
+
+  /* Miniaturas */
+  .lista-imagens img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Texto */
+  .produto-nome {
+    font-size: 22px;
+  }
+
+  /* Botão */
+  .container-produto #btnCarrinho,
+  .btn-add-carrinho {
+    font-size: 15px;
+  }
+
+  .produto-descricao {
+    padding: 20px;
+  }
 }

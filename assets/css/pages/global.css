@@ -351,3 +351,153 @@ main ul li a span {
   animation-play-state: paused;
 }
 
+/* responsividade smartphones */
+
+@media (max-width: 576px) {
+
+  /* ===== BANNER PRINCIPAL ===== */
+  .banner-container {
+    height: 220px;
+  }
+
+  .banner-text p {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .banner-text {
+    max-width: 90%;
+  }
+
+  /* ===== ÍCONES ===== */
+  .flex-icon {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* ===== MENU PRINCIPAL ===== */
+  main ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  main ul li {
+    margin: 0;
+  }
+
+  main ul li a {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  main ul li a span {
+    font-size: 13px;
+  }
+
+  /* ===== TÍTULOS ===== */
+  .title {
+    padding: 0 20px;
+  }
+
+  .title h3 {
+    font-size: 1.4rem;
+  }
+
+  /* ===== CAROUSEL ===== */
+  .carousel {
+    padding-left: 15px;
+  }
+
+  .product-card {
+    width: 80vw;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  /* ===== BANNERS DUPLOS ===== */
+  .banners-duplos {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .banner,
+  .banner-grande,
+  .banner-pequeno {
+    height: 200px;
+  }
+
+  .btn-banner {
+    bottom: 15px;
+    left: 15px;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  /* ===== LOGOS ===== */
+  .logos-track img {
+    height: 40px;
+  }
+}
+
+/* responsivo tablets  */
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+  /* ===== BANNER ===== */
+  .banner-container {
+    height: 300px;
+  }
+
+  .banner-text p {
+    font-size: 38px;
+  }
+
+  /* ===== ÍCONES ===== */
+  .flex-icon {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  /* ===== MENU ===== */
+  main ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main ul li a {
+    font-size: 18px;
+  }
+
+  /* ===== CAROUSEL ===== */
+  .carousel {
+    padding-left: 20px;
+  }
+
+  .product-card {
+    width: 45vw;
+  }
+
+  .product-image {
+    height: 200px;
+  }
+
+  /* ===== BANNERS ===== */
+  .banners-duplos {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+
+  .banner,
+  .banner-grande,
+  .banner-pequeno {
+    height: 240px;
+  }
+
+  /* ===== LOGOS ===== */
+  .logos-track img {
+    height: 45px;
+  }
+}
