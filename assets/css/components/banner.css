@@ -9,3 +9,51 @@
   position: relative;
   overflow: hidden;
 }
+ 
+/* resposividade banner */
+
+.banner-content {
+  position: absolute;
+  left: 60px;
+  color: #fff;
+  max-width: 520px;
+}
+
+.banner-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    left: 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 28px;
+  }
+}
+
+/* responsividade   */
+@media (max-width: 1024px) {
+  .banner-container {
+    height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    height: 200px;
+  }
+}
+

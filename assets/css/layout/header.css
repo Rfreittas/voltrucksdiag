@@ -86,3 +86,51 @@ header ul li a {
 .header-cart #badgeCarrinho.active {
   display: flex;
 }
+
+/* responsividade   */
+
+/* ===============================
+   HEADER RESPONSIVO
+   =============================== */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 20px 4%;
+  }
+
+  header img {
+    width: 220px;
+  }
+
+  header ul li {
+    margin: 0 12px;
+  }
+
+  header ul li a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  header img {
+    width: 200px;
+  }
+
+  header ul {
+    text-align: center;
+  }
+
+  header ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .btn-contato {
+    margin-top: 10px;
+  }
+}

@@ -34,9 +34,14 @@ footer .box-line-footer img {
 .line-footer2 .box-line-footer a {
   color: #000000;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-decoration: none;
   font-size: .9rem;
+}
+
+.line-footer2 .box-line-footer a:hover {
+  color: #f20744;
+  transition: color 0.2s ease;
 }
 
 .box-line-footer .btn-redes a {
@@ -117,10 +122,62 @@ footer .line-footer3 {
 }
 
 /* RESPONSIVO */
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  footer .line-footer2 {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  footer .line-footer2 .box-line-footer {
+    max-width: calc(100% / 3);
+  }
+}
+
 @media (max-width: 768px) {
+  footer {
+    padding: 20px 0;
+  }
+
+  footer .line-footer2 {
+    padding: 20px;
+  }
+
+  footer .line-footer2 .box-line-footer {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  footer .box-line-footer img {
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .box-line-footer .btn-redes {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .line-footer3 {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+
+  /* WhatsApp Footer */
   .whatsapp-container {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+  }
+
+  .whatsapp-text {
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .btn-whatsapp {
+    width: 100%;
+    max-width: 280px;
     text-align: center;
   }
 }
