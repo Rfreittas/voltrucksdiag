@@ -6,13 +6,14 @@
 @import url("./layout/footer.css");
 @import url("./layout/grid.css");
 
-@import url("./components/buttons.css");
-@import url("./components/cards.css");
-@import url("./components/banner.css");
-@import url("./components/carousel.css");
-@import url("./components/pagination.css");
+@import url("./components/");
+
 
 @import url("./pages/produtos.css");
 @import url("./pages/carrinho.css");
 @import url("./pages/program.css");
-@import url("./pages/global.css");
+@import url("./pages/index.css");
+@import url("./pages/sobre.css");
+
+
+ 

@@ -1,9 +1,8 @@
-
 /* header e footer todas pages*/
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Carregar Header
-  fetch("../layout/header.html")
+// Carregar Header
+  fetch("/layout/header.html")
     .then(res => res.text())
     .then(html => {
       const container = document.getElementById("header-container");
@@ -26,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(err => console.error("Erro ao carregar o header:", err));
 
+
   // Carregar Footer
   fetch("/layout/footer.html")
     .then(response => response.text())
@@ -34,3 +34,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
