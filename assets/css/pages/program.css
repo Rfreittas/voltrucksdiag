@@ -130,9 +130,12 @@
   min-height: 38px;
   color: #222;
   margin-bottom: 6px;
+  text-decoration: none;
 }
 
-
+.produtos-page a {
+  text-decoration: none;
+}
 
 /* PREÇO / TEXTO */
 .produtos-page .cardboard-card small {

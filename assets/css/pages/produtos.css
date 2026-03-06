@@ -4,8 +4,12 @@
 
 .produtos-page .breadcrumb a {
   color: #0d6efd;
+  text-decoration: none;
 }
 
+.produtos-page a {
+  text-decoration: none;
+}
 /*product*/
 
 .container-produto {
@@ -94,7 +98,6 @@
 .cartoes img:hover {
   transform: scale(1.1);
 }
-
 
 /* ================= PRODUTO ================= */
 
