@@ -1,13 +1,16 @@
-<header class="bg-dark py-3">
-  <div class="container d-flex align-items-center justify-content-between">
+<header class="header" id="header">
+
+  <div class="container header-container">
 
     <!-- LOGO -->
-    <a href="/index.html">
-      <img src="/assets/img/banners/logo-marca.png" alt="Logo Voltrucks" style="width:220px">
-    </a>
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/assets/img/banners/logo-marca.png">
+      </a>
+    </div>
 
-    <!-- BOTÃO HAMBÚRGUER (mobile) -->
-    <div class="menu-toggle d-lg-none" id="menuToggle">
+    <!-- BOTÃO MOBILE -->
+    <div class="menu-toggle" id="menuToggle">
       <span></span>
       <span></span>
       <span></span>
@@ -15,45 +18,74 @@
 
     <!-- MENU -->
     <nav class="menu" id="menu">
-      <ul class="d-flex gap-4 list-unstyled mb-0 align-items-center flex-lg-row flex-column">
 
-        <!-- PRODUTOS COM SUBMENU -->
-        <li class="has-submenu">
-          <a href="/pages/produtos.html" class="text-white text-decoration-none">
-            PRODUTOS
-          </a>
+      <ul>
 
-          <ul class="submenu list-unstyled">
-            <li><a href="/pages/produtos.html">Produtos</a></li>
-            <li><a href="/pages/scanners.html">Scanners</a></li>
-            <li><a href="/pages/interface-notebook.html">Interface Notebook</a></li>
-          </ul>
+        <li class="mega-parent">
+
+          <a href="/pages/produtos.html">PRODUTOS</a>
+
+          <!-- MEGA MENU -->
+          <div class="mega-menu">
+
+            <div class="mega-col">
+
+              <h4>Diagnóstico</h4>
+
+              <a href="/pages/Programas.html">Programas</a>
+              <a href="/pages/interface-notebook.html">Scanner + Notebook</a>
+              <a href="/pages/acessorios.html">Acessórios</a>
+
+            </div>
+
+            <div class="mega-col">
+
+              <h4>Todas as Marcas</h4>
+
+              <a href="/pages/marcas/volvo.html">Volvo</a>
+              <a href="/pages/marcas/scania.html">Scania</a>
+              <a href="/pages/marcas/mercedes.html">Mercedes-Benz</a>
+              <a href="/pages/marcas/cummins.html">Cummins</a>
+              <a href="/pages/marcas/caterpillar.html">Caterpillar</a>
+              <a href="/pages/marcas/outros.html">Outros</a>
+              <a href="/pages/marcas/john-deere.html">John Deere</a>
+
+            </div>
+
+            <div class="mega-col">
+
+              <h4>Suporte</h4>
+
+
+              <a href="/pages/servicos.html">Serviços e instalações</a>
+              <a href="https://wa.me/5518998070775?text=Olá!%20Preciso%20de%20Suporte%20e%20informação." target="_blank">Suporte técnico</a>
+
+            </div>
+
+          </div>
+
         </li>
 
-        <li class="d-none d-lg-block">
-          <a href="/pages/servicos.html" class="text-white text-decoration-none">SERVIÇOS</a>
-        </li>
-
-        <li class="d-none d-lg-block">
-          <a href="/pages/sobre.html" class="text-white text-decoration-none">SOBRE NÓS</a>
-        </li>
+        <li><a href="/pages/scanners.html">SCANNERS</a></li>
+        <li><a href="/pages/sobre/sobre.html">SOBRE</a></li>
 
       </ul>
+
     </nav>
 
     <!-- AÇÕES -->
-    <div class="d-none d-lg-flex gap-2">
-      <button class="btn btn-outline-light">
-        <i class="bi bi-person-fill"></i>
-      </button>
+    <div class="header-actions">
 
-      <a href="/carrinho.html">
-        <button class="btn btn-outline-light position-relative">
-          <i class="bi bi-cart-check"></i>
-          <span id="badgeCarrinho" class="badge position-absolute top-0 start-100 translate-middle"></span>
-        </button>
+      <a href="/carrinho.html" class="cart">
+
+        <i class="bi bi-cart3"></i>
+
+        <span id="badgeCarrinho" class="badge-carrinho"></span>
+
       </a>
+
     </div>
 
   </div>
+
 </header>

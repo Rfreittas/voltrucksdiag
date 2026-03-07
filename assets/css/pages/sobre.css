@@ -49,7 +49,7 @@
   background-color: #fff;
   padding: 30px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   flex: 1;
   min-width: 250px;
   max-width: 350px;
@@ -73,7 +73,7 @@
 
 #sobre-nos-container .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* VALORES */
@@ -98,7 +98,7 @@
   background-color: #fff;
   padding: 25px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   flex: 1;
   min-width: 250px;
   max-width: 350px;
@@ -116,9 +116,127 @@
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
+
   #sobre-nos-container .cards,
   #sobre-nos-container .valores {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* Política de Privacidade */
+#politica-container {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  color: #212529;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#politica-container p {
+  line-height: 1.6;
+  color: #555;
+}
+
+#politica-container .hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#politica-container .hero h1 {
+  font-size: 2.5rem;
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+#politica-container .hero p {
+  font-size: 1.2rem;
+}
+
+#politica-container .conteudo {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#politica-container h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #212529;
+}
+
+#politica-container p {
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px) {
+
+  #politica-container .conteudo {
+    padding: 25px;
+  }
+}
+
+/* Termos de Condições */
+/* =====================
+   CSS ISOLADO PARA TERMOS
+===================== */
+
+#termos-container {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  color: #212529;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#termos-container p {
+  line-height: 1.6;
+  color: #555;
+}
+
+#termos-container .hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#termos-container .hero h1 {
+  font-size: 2.5rem;
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+#termos-container .hero p {
+  font-size: 1.2rem;
+}
+
+#termos-container .conteudo {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#termos-container h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #212529;
+}
+
+#termos-container p {
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+  #termos-container .conteudo{
+    padding:25px;
+  }
+
 }

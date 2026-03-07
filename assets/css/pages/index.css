@@ -351,7 +351,6 @@
     .banner-overlay {
         position: absolute;
         inset: 0;
-        background: rgba(8, 8, 8, 0.5);
     }
 
     .banner-text {
@@ -402,17 +401,19 @@
     .mini-track {
         display: flex;
         gap: 60px;
-        width: max-content;/* ADICIONAR */
+        width: max-content;
+        /* ADICIONAR */
         animation: scroll 30s linear infinite;
         /* opcional deixar mais suave */
     }
 
     .mini-item {
-    flex: 0 0 auto; /* MUDAR */
-    min-width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        flex: 0 0 auto;
+        /* MUDAR */
+        min-width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .mini-item img {
@@ -427,15 +428,15 @@
         opacity: 1;
     }
 
-   @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
 
-  100% {
-    transform: translateX(calc(-50% - 30px));
-  }
-}
+        100% {
+            transform: translateX(calc(-50% - 30px));
+        }
+    }
 
     /* =====================
    TABLETS
@@ -475,6 +476,13 @@
     /* =====================
    CELULARES
 ===================== */
+    @media (max-width:768px) {
+        .benefits {
+            display: none;
+        }
+    }
+
+
     @media (max-width: 768px) {
 
         /* BANNER */
@@ -545,7 +553,7 @@
         }
 
         .product-card {
-            min-width: 240px;
+            min-width: 322px;
         }
 
         .service-card {

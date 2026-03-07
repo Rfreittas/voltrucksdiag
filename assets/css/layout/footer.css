@@ -121,7 +121,51 @@ footer .line-footer3 {
   background: #b9040f;
 }
 
-/* RESPONSIVO */
+/* =========================
+   FORMAS DE PAGAMENTO
+========================= */
+/* PAGAMENTOS */
+
+.pagamentos {
+  text-align: center;
+  color: #f20744;
+  margin-bottom: 10px;
+}
+
+.cartoes-footer2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  justify-items: center;
+  align-items: center;
+}
+
+.cartoes-footer2 img {
+  height: 30px;
+  object-fit: contain;
+  transition: 0.3s;
+  filter: grayscale(10%);
+}
+
+.cartoes-footer2 img:hover {
+  transform: scale(1.08);
+  filter: grayscale(0%);
+}
+
+/* MOBILE */
+
+@media (max-width:768px) {
+
+  .cartoes-footer2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cartoes-footer2 img {
+    height: 26px;
+  }
+
+}
+
 /* RESPONSIVO */
 @media (max-width: 1024px) {
   footer .line-footer2 {

@@ -4,10 +4,6 @@
 
 @import url("./layout/header.css");
 @import url("./layout/footer.css");
-@import url("./layout/grid.css");
-
-@import url("./components/");
-
 
 @import url("./pages/produtos.css");
 @import url("./pages/carrinho.css");
