@@ -13,7 +13,7 @@
     transform: translateY(-100%);
 }
 
-.container {
+.header .container {
     max-width: 1300px;
     margin: auto;
 }
@@ -59,75 +59,75 @@
    MEGA MENU
    =============================== */
 
-.mega-parent{
-position:relative;
+.mega-parent {
+    position: relative;
 }
 
 /* MEGA MENU */
-.mega-menu{
-position:absolute;
-top:100%;
-left:0;
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
 
-width:750px;
-background:#fff;
+    width: 750px;
+    background: #fff;
 
-padding:30px;
-display:flex;
-gap:40px;
+    padding: 30px;
+    display: flex;
+    gap: 40px;
 
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 
-opacity:0;
-visibility:hidden;
-transform:translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
 
-transition:0.25s ease;
-z-index:999;
+    transition: 0.25s ease;
+    z-index: 999;
 }
 
 /* ABRIR MENU */
-.mega-parent:hover .mega-menu{
-opacity:1;
-visibility:visible;
-transform:translateY(0);
+.mega-parent:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 /* COLUNAS */
-.mega-col{
-display:flex;
-flex-direction:column;
-gap:8px;
-min-width:180px;
+.mega-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 180px;
 }
 
-.mega-col h4{
-font-size:14px;
-font-weight:700;
-margin-bottom:10px;
-color:#000;
+.mega-col h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
 }
 
 /* LINKS */
-.mega-col a{
-text-decoration:none;
-color:#444;
-font-size:14px;
-transition:0.2s;
+.mega-col a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    transition: 0.2s;
 }
 
-.mega-col a:hover{
-color:#e60023;
+.mega-col a:hover {
+    color: #e60023;
 }
 
 /* BUFFER PARA NÃO SUMIR */
-.mega-parent::after{
-content:"";
-position:absolute;
-left:0;
-right:0;
-height:20px;
-bottom:-20px;
+.mega-parent::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px;
+    bottom: -20px;
 }
 
 
@@ -186,6 +186,46 @@ bottom:-20px;
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/* HEADER DO MENU */
+.filter-box h5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* seta */
+.filter-box h5 i {
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media(max-width:1024px){
+
+.mega-menu{
+display:none !important;
+}
+
+.mega-parent:hover .mega-menu{
+display:none;
+}
+
+}
+
+/* DESKTOP → sempre aberto */
+@media (min-width:992px) {
+
+    #menuProdutos,
+    #menuFiltros {
+        display: block !important;
+    }
+
+    .filter-box h5 {
+        cursor: default;
+    }
+
+}
+
 /*MENU LATERAL*/
 @media(max-width:1024px) {
 
@@ -214,4 +254,3 @@ bottom:-20px;
         gap: 20px;
     }
 }
-

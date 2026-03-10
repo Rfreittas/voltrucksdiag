@@ -174,32 +174,7 @@
   transform: scale(1.8);
 }
 
-/* HEADER DO MENU */
-.filter-box h5 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
 
-/* seta */
-.filter-box h5 i {
-  font-size: 14px;
-}
-
-/* DESKTOP → sempre aberto */
-@media (min-width:992px) {
-
-  #menuProdutos,
-  #menuFiltros {
-    display: block !important;
-  }
-
-  .filter-box h5 {
-    cursor: default;
-  }
-
-}
 
 /* ===============================
    MINIATURAS (ADD)
