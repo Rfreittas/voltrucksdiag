@@ -2,7 +2,7 @@ const carousel = document.getElementById("carousel");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
-const cardWidth = 340;
+const cardWidth = carousel.querySelector('.product-card').offsetWidth + 20;
 
 next.addEventListener("click", () => {
   carousel.scrollBy({
