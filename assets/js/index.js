@@ -1,19 +1,21 @@
-const carousel = document.getElementById('carousel');
-const next = document.getElementById('next');
-const prev = document.getElementById('prev');
+const carousel = document.getElementById("carousel");
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
 
-let scrollAmount = 0;
 const cardWidth = 340;
 
-next.addEventListener('click', () => {
-  scrollAmount += cardWidth;
-  carousel.style.transform = `translateX(-${scrollAmount}px)`;
+next.addEventListener("click", () => {
+  carousel.scrollBy({
+    left: cardWidth,
+    behavior: "smooth"
+  });
 });
 
-prev.addEventListener('click', () => {
-  scrollAmount -= cardWidth;
-  if (scrollAmount < 0) scrollAmount = 0;
-  carousel.style.transform = `translateX(-${scrollAmount}px)`;
+prev.addEventListener("click", () => {
+  carousel.scrollBy({
+    left: -cardWidth,
+    behavior: "smooth"
+  });
 });
 
   const track = document.querySelector('.mini-track');
