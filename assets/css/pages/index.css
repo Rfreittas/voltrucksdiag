@@ -438,131 +438,155 @@
         }
     }
 
-    /* =====================
-   TABLETS
-===================== */
-    @media (max-width: 1024px) {
-
-        .banner-content h1 {
-            font-size: 36px;
-        }
-
-        .banner-content p {
-            font-size: 18px;
-        }
-
-        .benefit-item {
-            width: 48%;
-            margin-bottom: 20px;
-        }
-
-        .carousel {
-            gap: 16px;
-        }
-
-        .product-card {
-            min-width: 280px;
-        }
-
-        .banner-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .banner-item {
-            height: 300px;
-        }
-    }
+    
 
     /* =====================
-   CELULARES
+TABLETS
 ===================== */
-    @media (max-width:768px) {
-        .benefits {
-            display: none;
-        }
-    }
+
+@media (max-width:1024px){
+
+.banner-content h1{
+font-size:36px;
+}
+
+.banner-content p{
+font-size:18px;
+}
+
+/* SECTION 2 */
+
+.benefit-item{
+width:48%;
+margin-bottom:20px;
+}
+
+/* CAROUSEL */
+
+.carousel{
+gap:16px;
+}
+
+.product-card{
+min-width:280px;
+}
+
+/* SECTION 4 */
+
+.banner-grid{
+grid-template-columns:1fr;
+}
+
+.banner-item{
+height:300px;
+}
+
+}
 
 
-    @media (max-width: 768px) {
-
-        /* BANNER */
-        .banner {
-            min-height: 90vh;
-            padding: 40px 20px;
-        }
-
-        .banner-content h1 {
-            font-size: 28px;
-        }
-
-        .banner-content p {
-            font-size: 16px;
-        }
-
-        /* BENEFITS */
-        .benefits {
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .benefit-item {
-            width: 100%;
-        }
-
-        /* CAROUSEL */
-        .product-card {
-            min-width: 260px;
-        }
-
-        /* SECTION 3.1 */
-        .cards-grid {
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-
-        /* BANNERS */
-        .banner-item {
-            height: 260px;
-        }
-
-        /* MINI CAROUSEL */
-        .mini-track {
-            gap: 30px;
-        }
-
-        .mini-item img {
-            max-width: 110px;
-        }
-    }
-
-    /* =====================
-   CELULARES PEQUENOS
+/* =====================
+MOBILE
 ===================== */
-    @media (max-width: 480px) {
 
-        .banner-content h1 {
-            font-size: 24px;
-        }
+@media (max-width:768px){
 
-        .banner-content p {
-            font-size: 15px;
-        }
+/* SECTION 1 - BANNER */
 
-        .section-top h2 {
-            font-size: 22px;
-        }
+.banner{
+min-height:280px;
+padding:30px 20px;
+}
 
-        .product-card {
-            min-width: 322px;
-        }
+.banner-content h1{
+font-size:24px;
+line-height:1.3;
+}
 
-        .service-card {
-            padding: 20px;
-        }
+.banner-content p{
+font-size:15px;
+}
 
-        .btn-banner,
-        .btn-card {
-            width: 100%;
-            text-align: center;
-        }
-    }
+
+/* SECTION 2 */
+
+.benefits{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+padding:30px 20px;
+}
+
+.benefit-item{
+width:100%;
+min-width:unset;
+}
+
+
+/* SECTION 3 */
+
+.product-card{
+min-width:45%;
+}
+
+
+/* SECTION 3.1 */
+
+.cards-grid{
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+
+/* SECTION 4 */
+
+.banner-item{
+height:220px;
+}
+
+
+/* SECTION 5 */
+
+.mini-track{
+gap:30px;
+}
+
+.mini-item img{
+max-width:100px;
+}
+
+}
+
+
+/* =====================
+CELULARES PEQUENOS
+===================== */
+
+@media (max-width:480px){
+
+.banner-content h1{
+font-size:22px;
+}
+
+.banner-content p{
+font-size:14px;
+}
+
+.section-top h2{
+font-size:20px;
+}
+
+.product-card{
+min-width:85%;
+}
+
+.service-card{
+padding:20px;
+}
+
+.btn-banner,
+.btn-card{
+width:100%;
+text-align:center;
+}
+
+}
