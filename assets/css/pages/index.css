@@ -116,11 +116,11 @@ align-items:center;
 }
 
 .section-top h2{
-font-size:clamp(22px, 4vw, 28px);
-word-wrap: break-word;
+font-size:clamp(22px,4vw,28px);
+word-wrap:break-word;
 }
 
-/* BOTÕES CAROUSEL */
+/* BOTÕES */
 
 .carousel-controls button{
 width:40px;
@@ -138,12 +138,15 @@ background:#c40000;
 color:#fff;
 }
 
-/* CAROUSEL */
+/* WRAPPER */
 
 .carousel-wrapper{
 overflow:hidden;
 margin-top:40px;
+padding:0 10px;
 }
+
+/* CAROUSEL */
 
 .carousel{
 display:flex;
@@ -151,16 +154,17 @@ gap:20px;
 overflow-x:auto;
 scroll-behavior:smooth;
 scrollbar-width:none;
+padding-bottom:10px;
 }
 
 .carousel::-webkit-scrollbar{
 display:none;
 }
 
-/* CARD PRODUTO */
+/* CARD */
 
 .product-card{
-min-width:320px;
+width:300px;
 flex:0 0 auto;
 background:#fff;
 padding:20px;
@@ -226,7 +230,7 @@ padding:5px 10px;
 border-radius:4px;
 }
 
-/* BOTÃO PRODUTO */
+/* BOTÃO */
 
 .btn-product{
 margin-top:15px;
@@ -375,21 +379,22 @@ background:#fff;
 }
 
 .mini-carousel{
-overflow:hidden;
 width:100%;
-margin-top:40px;
+overflow:hidden;
+padding:0 20px;
 }
 
 .mini-track{
 display:flex;
-gap:60px;
+gap:30px;
 width:max-content;
 animation:scroll 30s linear infinite;
 }
 
 .mini-item{
 flex:0 0 auto;
-min-width:160px;
+min-width:280px;
+max-width:280px;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -443,7 +448,7 @@ font-size:22px;
 }
 
 .product-card{
-min-width:100%;
+width:85%;
 }
 
 .cards-grid{
@@ -512,6 +517,18 @@ height:300px;
 
 .mini-track{
 gap:40px;
+}
+
+}
+
+@media (max-width:768px){
+
+.mini-item{
+width:240px;
+}
+
+.mini-track{
+gap:20px;
 }
 
 }
