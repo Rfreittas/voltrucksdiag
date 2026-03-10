@@ -2,28 +2,46 @@ const carousel = document.getElementById("carousel");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
-const cardWidth = carousel.querySelector('.product-card').offsetWidth + 20;
+const cards = carousel.querySelectorAll(".product-card");
+const cardWidth = cards[0].offsetWidth + 20;
+
+/* DUPLICAR CARDS PARA INFINITO */
+
+cards.forEach(card => {
+  const clone = card.cloneNode(true);
+  carousel.appendChild(clone);
+});
+
+/* BOTÃO NEXT */
 
 next.addEventListener("click", () => {
+
   carousel.scrollBy({
     left: cardWidth,
     behavior: "smooth"
   });
+
 });
 
+/* BOTÃO PREV */
+
 prev.addEventListener("click", () => {
+
   carousel.scrollBy({
     left: -cardWidth,
     behavior: "smooth"
   });
+
 });
 
-  const track = document.querySelector('.mini-track');
+/* LOOP INFINITO */
 
-  track.addEventListener('mouseenter', () => {
-    track.style.animationPlayState = 'paused';
-  });
+carousel.addEventListener("scroll", () => {
 
-  track.addEventListener('mouseleave', () => {
-    track.style.animationPlayState = 'running';
-  });
+  if(carousel.scrollLeft >= carousel.scrollWidth / 2){
+
+    carousel.scrollLeft = 0;
+
+  }
+
+});

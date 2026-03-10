@@ -1,532 +1,443 @@
-    section {
-        width: 100%;
-    }
+/* ===============================
+   GLOBAL
+=============================== */
 
-    /* SECTION 1 */
-    .banner {
-        min-height: 500px;
-        height: auto;
-        background: url("/assets/img/banners/Banner-principal.jpg") center/cover no-repeat;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* Overlay escuro */
-    .banner::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.6);
-    }
-
-    .banner-content {
-        position: relative;
-        text-align: center;
-        color: #fff;
-        max-width: 800px;
-        padding: 20px;
-    }
-
-    .banner-content h1 {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
-    .banner-content p {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    .btn-banner {
-        display: inline-block;
-        padding: 12px 30px;
-        background: #c40000;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    .btn-banner:hover {
-        background: #ff0000;
-    }
-
-    #dois {
-        background: #f0f0f3;
-    }
-
-    #tres {
-        background: #f0f0f3;
-    }
-
-    #quatro {
-        background: #f0f0f3;
-    }
-
-    #cinco {
-        background: #f0f0f3;
-    }
-
-    /* SECTION 2  */
-
-    .benefits {
-        background: #f3f3f3;
-        padding: 30px 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .benefit-item {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        width: 23%;
-        min-width: 220px;
-    }
-
-    .benefit-item i {
-        font-size: 28px;
-        color: #c40000;
-    }
-
-    .benefit-item h4 {
-        font-size: 15px;
-        margin-bottom: 4px;
-        color: #000;
-    }
-
-    .benefit-item p {
-        font-size: 13px;
-        color: #777;
-    }
-
-    /* SECTION 3 */
-
-.mais-vendidos {
-    background: #f5f5f5;
-    padding: 20px 20px;
+section{
+width:100%;
 }
 
-section .container {
-    max-width: 1460px;
-    margin: auto;
-    padding: 0 20px;
+section .container{
+max-width:1460px;
+margin:auto;
+padding:0 40px;
 }
 
-/* Título + setas */
+/* ===============================
+   SECTION 1 - BANNER
+=============================== */
 
-.section-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.banner{
+min-height:500px;
+background:url("/assets/img/banners/Banner-principal.jpg") center/cover no-repeat;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
-.section-top h2 {
-    font-size: 28px;
+.banner::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.6);
+}
+
+.banner-content{
+position:relative;
+text-align:center;
+color:#fff;
+max-width:800px;
+padding:20px;
+}
+
+.banner-content h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.banner-content p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn-banner{
+display:inline-block;
+padding:12px 30px;
+background:#c40000;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn-banner:hover{
+background:#ff0000;
+}
+
+/* ===============================
+   SECTION 2 - BENEFÍCIOS
+=============================== */
+
+.benefits{
+background:#f3f3f3;
+padding:30px 5%;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.benefit-item{
+display:flex;
+align-items:center;
+gap:15px;
+width:23%;
+min-width:220px;
+}
+
+.benefit-item i{
+font-size:28px;
+color:#c40000;
+}
+
+.benefit-item h4{
+font-size:15px;
+margin-bottom:4px;
+}
+
+.benefit-item p{
+font-size:13px;
+color:#777;
+}
+
+/* ===============================
+   SECTION 3 - PRODUTOS
+=============================== */
+
+.mais-vendidos{
+background:#f5f5f5;
+padding:40px 0;
+}
+
+.section-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.section-top h2{
+font-size:28px;
 }
 
 /* BOTÕES CAROUSEL */
 
-.carousel-controls button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    background: #fff;
-    cursor: pointer;
-    margin-left: 8px;
-    transition: 0.3s;
+.carousel-controls button{
+width:40px;
+height:40px;
+border-radius:50%;
+border:1px solid #ddd;
+background:#fff;
+cursor:pointer;
+margin-left:8px;
+transition:.3s;
 }
 
-.carousel-controls button:hover {
-    background: #c40000;
-    color: #fff;
+.carousel-controls button:hover{
+background:#c40000;
+color:#fff;
 }
 
 /* CAROUSEL */
 
-.carousel-wrapper {
-    overflow: hidden;
-    margin-top: 40px;
+.carousel-wrapper{
+overflow:hidden;
+margin-top:40px;
 }
 
-.carousel {
-    display: flex;
-    gap: 20px;
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    scrollbar-width: none;
+.carousel{
+display:flex;
+gap:20px;
+overflow-x:auto;
+scroll-behavior:smooth;
+scrollbar-width:none;
+scroll-snap-type:x mandatory;
 }
 
-.carousel::-webkit-scrollbar {
-    display: none;
+.carousel::-webkit-scrollbar{
+display:none;
 }
 
 /* CARD PRODUTO */
 
-.product-card {
-    min-width: 320px;
-    flex: 0 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-    transition: 0.3s;
-
-    text-decoration: none;
-    color: inherit;
-    display: block;
+.product-card{
+min-width:320px;
+flex:0 0 auto;
+background:#fff;
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:.3s;
+position:relative;
+text-decoration:none;
+color:inherit;
+scroll-snap-align:start;
 }
 
-.product-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+.product-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,.1);
 }
 
-.product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
+.product-card img{
+width:100%;
+height:200px;
+object-fit:contain;
 }
 
-.product-card h3 {
-    font-size: 15px;
-    margin: 15px 0;
-    min-height: 40px;
+.product-card h3{
+font-size:15px;
+margin:15px 0;
+min-height:40px;
 }
 
 /* PREÇOS */
 
-.old-price {
-    text-decoration: line-through;
-    color: #999;
-    font-size: 14px;
+.old-price{
+text-decoration:line-through;
+color:#999;
+font-size:14px;
 }
 
-.price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #c40000;
+.price{
+font-size:20px;
+font-weight:bold;
+color:#c40000;
 }
 
-.discount {
-    display: inline-block;
-    margin-top: 5px;
-    background: #c40000;
-    color: #fff;
-    padding: 3px 8px;
-    font-size: 12px;
-    border-radius: 4px;
+.discount{
+display:inline-block;
+margin-top:5px;
+background:#c40000;
+color:#fff;
+padding:3px 8px;
+font-size:12px;
+border-radius:4px;
 }
 
 /* BADGE */
 
-.badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: #1db954;
-    color: #fff;
-    font-size: 11px;
-    padding: 5px 10px;
-    border-radius: 4px;
+.badge{
+position:absolute;
+top:15px;
+left:15px;
+background:#1db954;
+color:#fff;
+font-size:11px;
+padding:5px 10px;
+border-radius:4px;
 }
 
-/* BOTÃO */
+/* BOTÃO PRODUTO */
 
-.btn-product {
-    margin-top: 15px;
-    width: 100%;
-    padding: 10px;
-    background: #000;
-    color: #fff;
-    border-radius: 6px;
-    text-align: center;
-    transition: 0.3s;
+.btn-product{
+margin-top:15px;
+width:100%;
+padding:10px;
+background:#000;
+color:#fff;
+border-radius:6px;
+transition:.3s;
 }
 
-.btn-product:hover {
-    background: #c40000;
+.btn-product:hover{
+background:#c40000;
 }
 
+/* ===============================
+   SECTION 3.1 - SERVIÇOS
+=============================== */
 
-    /* SECTION 3.1*/
-
-    .section-3 {
-        padding: 20px 20px;
-        background: #212529;
-    }
-
-    .section-title {
-        text-align: center;
-        color: #ffffff;
-        margin-bottom: 50px;
-        font-size: 32px;
-    }
-
-    .cards-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    /* MAIS ESPAÇO NA PARTE DE BAIXO */
-    .cards-bottom {
-        gap: 40px;
-        /* controla o espaçamento entre os cards */
-    }
-
-    .service-card {
-        background: #1a1a1a;
-        border-radius: 12px;
-        padding: 30px;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-
-    .service-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-    }
-
-    .service-card img {
-        width: 100%;
-        max-height: 160px;
-        object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 20px;
-    }
-
-    .service-card h4 {
-        color: #fff;
-        margin-bottom: 12px;
-    }
-
-    .service-card p {
-        color: #bdbdbd;
-        font-size: 15px;
-        margin-bottom: 25px;
-    }
-
-    /* BOTÃO IGUAL AO DE CIMA */
-    .btn-card {
-        display: inline-block;
-        padding: 12px 28px;
-        background: #5a5a5a;
-        /* cinza padrão Voltrucks */
-        color: #fff;
-        border-radius: 30px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: 0.3s;
-    }
-
-    .btn-card:hover {
-        background: #777;
-    }
-
-
-    /* SECTION 4 - DOIS BANNERS */
-
-    .duplo-banner {
-        padding: 30px 20px;
-        background: #fff;
-    }
-
-    .banner-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .banner-item {
-        position: relative;
-        height: 350px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 12px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.4s;
-    }
-
-    .banner-item:hover {
-        transform: scale(1.02);
-    }
-
-    .banner-overlay {
-        position: absolute;
-        inset: 0;
-    }
-
-    .banner-text {
-        position: relative;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .banner-text h2 {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-
-    .banner-text p {
-        margin-bottom: 20px;
-        font-size: 16px;
-    }
-
-    /* Botão reaproveitado */
-    .btn-banner {
-        display: inline-block;
-        padding: 10px 25px;
-        background: #c40000;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: 0.3s;
-    }
-
-    .btn-banner:hover {
-        background: #ff0000;
-    }
-
-    /* SECTION 5 */
-
-    .section-5 {
-        padding: 10px 0;
-        background: #ffffff;
-    }
-
-    .mini-carousel {
-        overflow: hidden;
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    .mini-track {
-        display: flex;
-        gap: 60px;
-        width: max-content;
-        /* ADICIONAR */
-        animation: scroll 30s linear infinite;
-        /* opcional deixar mais suave */
-    }
-
-    .mini-item {
-        flex: 0 0 auto;
-        /* MUDAR */
-        min-width: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .mini-item img {
-        max-width: 140px;
-        filter: grayscale(100%);
-        opacity: 0.7;
-        transition: 0.3s ease;
-    }
-
-    .mini-item:hover img {
-        filter: grayscale(0);
-        opacity: 1;
-    }
-
-    @keyframes scroll {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(calc(-50% - 30px));
-        }
-    }
-
-    
-
-    /* =====================
-TABLETS
-===================== */
-
-@media (max-width:1024px){
-
-.banner-content h1{
-font-size:36px;
+.section-3{
+padding:40px 0;
+background:#212529;
 }
 
-.banner-content p{
-font-size:18px;
+.section-title{
+text-align:center;
+color:#fff;
+margin-bottom:50px;
+font-size:32px;
 }
 
-/* SECTION 2 */
+.cards-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(2,1fr));
+gap:15px;
+}
 
-.benefit-item{
-width:48%;
+.service-card{
+background:#1a1a1a;
+border-radius:12px;
+padding:18px;
+text-align:center;
+transition:.3s;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+min-height:210px;
+}
+
+.service-card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 30px rgba(0,0,0,.6);
+}
+
+.service-card img{
+width:100%;
+height:120px;
+object-fit:contain;
+border-radius:10px;
 margin-bottom:20px;
 }
 
-/* CAROUSEL */
-
-.carousel{
-gap:16px;
+.service-card h4{
+color:#fff;
+margin-bottom:12px;
 }
 
-.product-card{
-min-width:280px;
+.service-card p{
+color:#bdbdbd;
+font-size:15px;
+margin-bottom:25px;
 }
 
-/* SECTION 4 */
+.btn-card{
+display:inline-block;
+padding:12px 28px;
+background:#5a5a5a;
+color:#fff;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-card:hover{
+background:#777;
+}
+
+/* ===============================
+   SECTION 4 - BANNERS
+=============================== */
+
+.duplo-banner{
+padding:40px 0;
+background:#fff;
+}
 
 .banner-grid{
-grid-template-columns:1fr;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
 }
 
 .banner-item{
-height:300px;
+position:relative;
+height:350px;
+background-size:cover;
+background-position:center;
+border-radius:12px;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:.4s;
 }
 
+.banner-item:hover{
+transform:scale(1.02);
 }
 
-
-/* =====================
-MOBILE
-===================== */
-
-@media (max-width:768px){
-
-/* SECTION 1 - BANNER */
-
-.banner{
-min-height:280px;
-padding:30px 20px;
+.banner-overlay{
+position:absolute;
+inset:0;
 }
+
+.banner-text{
+position:relative;
+color:#fff;
+text-align:center;
+padding:20px;
+}
+
+.banner-text h2{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.banner-text p{
+font-size:16px;
+margin-bottom:20px;
+}
+
+/* ===============================
+   SECTION 5 - MARCAS
+=============================== */
+
+.section-5{
+padding:20px 0;
+background:#f5f5f5;
+}
+
+.mini-carousel{
+overflow:hidden;
+width:100%;
+margin-top:40px;
+}
+
+.mini-track{
+display:flex;
+gap:60px;
+width:max-content;
+animation:scroll 30s linear infinite;
+}
+
+.mini-item{
+flex:0 0 auto;
+min-width:160px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.mini-item img{
+max-width:140px;
+filter:grayscale(100%);
+opacity:.7;
+transition:.3s;
+}
+
+.mini-item:hover img{
+filter:grayscale(0);
+opacity:1;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0)}
+100%{transform:translateX(calc(-50% - 30px))}
+}
+
+/* ===============================
+   RESPONSIVIDADE SMARTPHONES
+=============================== */
+
+@media (max-width:576px){
 
 .banner-content h1{
-font-size:24px;
-line-height:1.3;
+font-size:28px;
 }
 
 .banner-content p{
-font-size:15px;
+font-size:16px;
 }
-
-
-/* SECTION 2 */
 
 .benefits{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:20px;
-padding:30px 20px;
+padding:25px 15px;
 }
 
 .benefit-item{
@@ -534,30 +445,40 @@ width:100%;
 min-width:unset;
 }
 
-
-/* SECTION 3 */
-
-.product-card{
-min-width:45%;
+.section-top h2{
+font-size:22px;
 }
 
-
-/* SECTION 3.1 */
+.product-card{
+min-width:100%;
+}
 
 .cards-grid{
-grid-template-columns:1fr 1fr;
+grid-template-columns:1fr;
 gap:20px;
 }
 
-
-/* SECTION 4 */
+.banner-grid{
+grid-template-columns:1fr;
+}
 
 .banner-item{
 height:220px;
 }
 
+.banner-text h2{
+font-size:20px;
+}
 
-/* SECTION 5 */
+.banner-text p{
+font-size:14px;
+}
+
+.btn-banner,
+.btn-card{
+width:100%;
+text-align:center;
+}
 
 .mini-track{
 gap:30px;
@@ -569,37 +490,57 @@ max-width:100px;
 
 }
 
+/* ===============================
+   RESPONSIVIDADE TABLETS
+=============================== */
 
-/* =====================
-CELULARES PEQUENOS
-===================== */
+@media (min-width:577px) and (max-width:1024px){
 
-@media (max-width:480px){
-
-.banner-content h1{
-font-size:22px;
-}
-
-.banner-content p{
-font-size:14px;
-}
-
-.section-top h2{
-font-size:20px;
+.benefit-item{
+width:48%;
+margin-bottom:20px;
 }
 
 .product-card{
-min-width:100%;
+min-width:280px;
+}
+
+.cards-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.banner-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.banner-item{
+height:300px;
+}
+
+.mini-track{
+gap:40px;
+}
+
+}
+
+@media (max-width:576px){
+
+.cards-grid{
+grid-template-columns:repeat(2,1fr);
+gap:15px;
 }
 
 .service-card{
-padding:20px;
+padding:18px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+height:100%;
 }
 
-.btn-banner,
-.btn-card{
-width:100%;
-text-align:center;
+.service-card img{
+height:120px;
+object-fit:contain;
 }
 
 }
