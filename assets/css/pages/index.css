@@ -107,144 +107,157 @@
 
     /* SECTION 3 */
 
-    .mais-vendidos {
-        background: #f5f5f5;
-        padding: 20px 20px;
-    }
+.mais-vendidos {
+    background: #f5f5f5;
+    padding: 20px 20px;
+}
 
-    section .container {
-        max-width: 1460px;
-        margin: auto;
-        padding: 0 20px;
-    }
+section .container {
+    max-width: 1460px;
+    margin: auto;
+    padding: 0 20px;
+}
 
-    /* Título + setas */
-    .section-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+/* Título + setas */
 
-    .section-top h2 {
-        font-size: 28px;
-    }
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .carousel-controls button {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 1px solid #ddd;
-        background: #fff;
-        cursor: pointer;
-        margin-left: 8px;
-        transition: 0.3s;
-    }
+.section-top h2 {
+    font-size: 28px;
+}
 
-    .carousel-controls button:hover {
-        background: #c40000;
-        color: #fff;
-    }
+/* BOTÕES CAROUSEL */
 
-    /* Carousel */
-    .carousel-wrapper {
-        overflow: hidden;
-        margin-top: 40px;
-    }
+.carousel-controls button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: 0.3s;
+}
 
-    .carousel {
-        display: flex;
-        gap: 20px;
-        transition: transform 0.4s ease;
-    }
+.carousel-controls button:hover {
+    background: #c40000;
+    color: #fff;
+}
 
-    /* Card */
-    .product-card {
-        min-width: 320px;
-        background: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        position: relative;
-        text-align: center;
-        transition: 0.3s;
+/* CAROUSEL */
 
-        text-decoration: none;
-        /* remove linha azul */
-        color: inherit;
-        /* mantém cor padrão */
-        display: block;
-        /* necessário para <a> */
-    }
+.carousel-wrapper {
+    overflow: hidden;
+    margin-top: 40px;
+}
 
-    .product-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    }
+.carousel {
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
 
-    .product-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: contain;
-    }
+.carousel::-webkit-scrollbar {
+    display: none;
+}
 
-    .product-card h3 {
-        font-size: 15px;
-        margin: 15px 0;
-        min-height: 40px;
-    }
+/* CARD PRODUTO */
 
-    /* Preços */
-    .old-price {
-        text-decoration: line-through;
-        color: #999;
-        font-size: 14px;
-    }
+.product-card {
+    min-width: 320px;
+    flex: 0 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
 
-    .price {
-        font-size: 20px;
-        font-weight: bold;
-        color: #c40000;
-    }
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
-    .discount {
-        display: inline-block;
-        margin-top: 5px;
-        background: #c40000;
-        color: #fff;
-        padding: 3px 8px;
-        font-size: 12px;
-        border-radius: 4px;
-    }
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
 
-    /* Badge */
-    .badge {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        background: #1db954;
-        color: #fff;
-        font-size: 11px;
-        padding: 5px 10px;
-        border-radius: 4px;
-    }
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
 
-    /* Botão */
-    .btn-product {
-        margin-top: 15px;
-        width: 100%;
-        padding: 10px;
-        background: #000;
-        color: #fff;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+.product-card h3 {
+    font-size: 15px;
+    margin: 15px 0;
+    min-height: 40px;
+}
 
-    .btn-product:hover {
-        background: #c40000;
-    }
+/* PREÇOS */
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c40000;
+}
+
+.discount {
+    display: inline-block;
+    margin-top: 5px;
+    background: #c40000;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+/* BADGE */
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #1db954;
+    color: #fff;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* BOTÃO */
+
+.btn-product {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-product:hover {
+    background: #c40000;
+}
+
 
     /* SECTION 3.1*/
+
     .section-3 {
         padding: 20px 20px;
         background: #212529;
