@@ -80,26 +80,21 @@ function finalizarWhatsApp() {
   }
 
   const numeroPedido = `VT-${Math.floor(Math.random() * 900000 + 100000)}`;
-  let mensagem = `🛒 *NOVO PEDIDO*\n`;
+  let mensagem = `🛒 *SOLICITAÇÃO DE ORÇAMENTO*\n`;
   mensagem += `📦 *Pedido Nº:* ${numeroPedido}\n`;
   mensagem += `📅 *Data:* ${new Date().toLocaleDateString("pt-BR")}\n\n`;
 
-  let total = 0;
-
   carrinho.forEach(item => {
-    const preco = Number(item.preco) || 0;
     const quantidade = Number(item.quantidade) || 1;
-    const subtotal = preco * quantidade;
-    total += subtotal;
 
     mensagem += `• ${item.nome}\n`;
     mensagem += `  Qtd: ${quantidade}\n`;
-    mensagem += `  Valor: R$ ${subtotal.toFixed(2)}\n\n`;
+    mensagem += `  💬 Quero um orçamento\n\n`;
   });
 
-  mensagem += `💰 *Total:* R$ ${total.toFixed(2)}`;
+  mensagem += `💬 *Solicito um orçamento para os itens acima.*`;
 
-  const telefone = "5518998070775"; // SEU WHATSAPP
+  const telefone = "5518998070775";
   const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
 
   window.open(url, "_blank");
