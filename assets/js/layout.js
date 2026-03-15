@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Carrega o JS do header
       const script = document.createElement("script");
-      script.src = "../assets/js/header.js";
+      script.src = "assets/js/header.js";
       script.onload = () => {
         if (typeof initHeaderMenu === "function") {
           initHeaderMenu(); // agora funciona com menu hambúrguer
