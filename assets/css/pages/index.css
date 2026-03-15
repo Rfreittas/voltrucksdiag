@@ -70,21 +70,6 @@ font-size:20px;
 margin-bottom:30px;
 }
 
-.btn-banner{
-display:inline-block;
-padding:12px 30px;
-background:#c40000;
-color:#fff;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn-banner:hover{
-background:#ff0000;
-}
-
 /* ===============================
    SECTION 2 - BENEFÍCIOS
 =============================== */
