@@ -1,15 +1,15 @@
-@import url("/base/reset.css");
-@import url("/base/variables.css");
-@import url("/base/typography.css");
+@import url("base/reset.css");
+@import url("base/variables.css");
+@import url("base/typography.css");
 
 @import url("layout/header.css");
 @import url("layout/footer.css");
 
 @import url("pages/produtos.css");
-@import url("/pages/carrinho.css");
+@import url("pages/carrinho.css");
 @import url("pages/program.css");
 @import url("pages/index.css");
-@import url("/pages/sobre.css");
+@import url("pages/sobre.css");
 
 
  
