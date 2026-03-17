@@ -323,7 +323,6 @@ background:#777;
 /* ===============================
    SECTION 4 - BANNERS
 =============================== */
-
 .duplo-banner{
 padding:40px 0;
 background:#fff;
@@ -335,6 +334,9 @@ grid-template-columns:1fr 1fr;
 gap:20px;
 }
 
+
+/* ITEM */
+
 .banner-item{
 position:relative;
 height:350px;
@@ -345,34 +347,138 @@ overflow:hidden;
 display:flex;
 align-items:center;
 justify-content:center;
-transition:.4s;
+transition:0.4s ease;
 }
 
+
+/* HOVER */
+
 .banner-item:hover{
-transform:scale(1.02);
+transform:scale(1.03);
 }
+
+
+/* OVERLAY (AGORA FUNCIONA) */
 
 .banner-overlay{
 position:absolute;
 inset:0;
+background:linear-gradient(
+to top,
+rgba(0,0,0,0.7),
+rgba(0,0,0,0.3),
+rgba(0,0,0,0.1)
+);
+transition:0.4s;
 }
+
+.banner-item:hover .banner-overlay{
+background:linear-gradient(
+to top,
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.2),
+transparent
+);
+}
+
+
+/* TEXTO */
 
 .banner-text{
 position:relative;
+z-index:2;
 color:#fff;
 text-align:center;
 padding:20px;
+max-width:80%;
 }
 
 .banner-text h2{
 font-size:28px;
 margin-bottom:10px;
+font-weight:700;
+text-shadow:0 3px 10px rgba(0,0,0,0.6);
 }
 
 .banner-text p{
-font-size:16px;
+font-size:15px;
 margin-bottom:20px;
+color:#eee;
 }
+
+
+/* BOTÃO */
+
+.btn-banner{
+display:inline-block;
+padding:12px 28px;
+font-size:13px;
+font-weight:600;
+text-transform:uppercase;
+letter-spacing:1px;
+
+color:#fff;
+text-decoration:none;
+
+background:linear-gradient(135deg,#ff0000,#b80000);
+border-radius:50px;
+
+box-shadow:0 5px 20px rgba(255,0,0,0.4);
+transition:0.3s;
+}
+
+.btn-banner:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 30px rgba(255,0,0,0.6);
+}
+
+
+/* ===============================
+TABLET
+=============================== */
+
+@media(max-width:1024px){
+
+.banner-item{
+height:280px;
+}
+
+.banner-text h2{
+font-size:22px;
+}
+
+}
+
+
+/* ===============================
+MOBILE
+=============================== */
+
+@media(max-width:768px){
+
+.banner-grid{
+grid-template-columns:1fr;
+}
+
+.banner-item{
+height:220px;
+}
+
+.banner-text{
+max-width:100%;
+}
+
+.banner-text h2{
+font-size:20px;
+}
+
+.banner-text p{
+font-size:14px;
+}
+
+}
+
+
 
 /* ===============================
    SECTION 5 - MARCAS
