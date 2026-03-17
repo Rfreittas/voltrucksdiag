@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Carrega o JS do header
       const script = document.createElement("script");
-      script.src = "../assets/js/header.js";
+      script.src = "./assets/js/header.js";
       script.onload = () => {
         if (typeof initHeaderMenu === "function") {
           initHeaderMenu(); // agora funciona com menu hambúrguer
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Carregar Footer
-  fetch("layout/footer.html")
+  fetch("./layout/footer.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("footer-container").innerHTML = data;
