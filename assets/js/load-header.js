@@ -7,7 +7,7 @@ document.getElementById("header-container").innerHTML = data;
 /* carregar script do header */
 
 const script = document.createElement("script");
-script.src = "assets/js/header/header.js";
+script.src = "assets/js/header.js";
 
 document.body.appendChild(script);
 
