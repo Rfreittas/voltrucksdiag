@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
 // Carregar Header
-  fetch("./layout/header.html")
+  fetch("../layout/header.html")
     .then(res => res.text())
     .then(html => {
       const container = document.getElementById("header-container");
